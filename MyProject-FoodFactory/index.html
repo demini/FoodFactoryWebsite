@@ -55,6 +55,33 @@
 				}
 			}
 			onload=banner;
+			
+			function cdtd(){
+			var offer=new Date ("June 18, 2015 00:01:00");
+			var now= new Date();
+			var timediff= offer.getTime()- now.getTime();
+			
+				if(timediff<=0){
+					clearTimeout(timer);
+					document.write("Offer is expired!");
+					}
+			var seconds= Math.floor(timediff/1000);
+			var minutes=Math.floor(seconds/60);
+			var hours=Math.floor(minutes/60);
+			var days=Math.floor(hours/24);
+			
+			hours%=24;
+			minutes%=60;
+			seconds%=60;
+			
+			document.getElementById("daysBox").innerHTML=days;
+			document.getElementById("hoursBox").innerHTML=hours;
+			document.getElementById("minsBox").innerHTML=minutes;
+			document.getElementById("secsBox").innerHTML=seconds;
+			
+			var timer=setTimeout("cdtd()",1000);
+			
+			}
     </script>
 </head>
 
@@ -66,6 +93,33 @@
     	<div id="logo">
         <img src="images/logo/logo.png" >
         </div>
+        
+        <div id="offer">
+<div id="description"><p>Enjoy 10% OFF<br/>
+Remaining time: </p>
+</div>
+
+<div id="detailwrapper">
+	
+	<div id="days" class="boxSize">Days</div>
+    
+    <div id="hours" class="boxSize">Hours</div>
+    
+    <div id="mins" class="boxSize">Mins</div>
+    
+    <div id="secs" class="boxSize">Secs</div>
+ </div>   
+<div id="timewrapper">
+	
+	<div id="daysBox" class="boxSize"></div>
+    
+    <div id="hoursBox" class="boxSize"></div>
+    
+    <div id="minsBox" class="boxSize"></div>
+    
+    <div id="secsBox" class="boxSize"></div>
+ </div>
+ </div>
         
         <div id="social-media">
         	<p class="head">Food Factory on social</p>
@@ -209,6 +263,10 @@
      All right reserved.</p>
     
     </div>
+    
+    <script type="text/javascript">
+		cdtd();
+    </script>
     
     
 </body>

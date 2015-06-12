@@ -164,3 +164,65 @@ body { font-family: 'Open Sans', Arial, Helvetica, sans-serif}
 
 #seven { background-image:url(../images/food%20menu/seven.png);}
 
+/*styles of the offer*/
+
+#detailwrapper { width:300px;
+                 height:40px;
+				 
+				 }
+				 
+#days {margin-left:20px; margin-right:20px;}	
+
+#hours { margin-right:20px;
+}
+
+#mins{ float:left; 
+margin-right:20px;}
+		   
+#secs{ float:right;
+margin-right:20px;}
+
+
+
+#timewrapper { width:300px;
+               height:40px;
+			   
+			   }
+
+.boxSize { width:50px;
+           height:25px;
+		   float:left;
+		   text-align:center;
+		   border-bottom:1px #000000 solid;
+		   }
+		   
+
+	   
+#daysBox {margin-left:20px; margin-right:18px;}	
+
+#hoursBox { margin-right:20px;
+}
+
+#minsBox { float:left; 
+margin-right:20px;}
+		   
+#secsBox { float:right;
+margin-right:20px;}
+
+#offer { width:320px;
+         height:124px;
+		 position:absolute;
+		 top:10px;
+		 left:500px;
+		 background-color:#F06;
+		 border:3px #FF0 solid;
+		 font-family:'Oleo Script', Arial, Helvetica, sans-serif;
+		 font-weight:100;
+		 color:#333;}
+		 
+#description { width:320px;
+               height:40px;
+			   text-align:center;}
+
+
+
