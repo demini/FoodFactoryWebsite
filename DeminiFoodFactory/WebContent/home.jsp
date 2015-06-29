@@ -138,7 +138,7 @@ Remaining time: </p>
 
 	<div id="topnav">
     	<ul>
-        	<li><a href="#">FOOD<img src="images/icons/newArrow.png"></a>
+        	<li><a href="home.jsp">FOOD<img src="images/icons/newArrow.png"></a>
             	<ul>
                 	<li><a href="#">BREAKFIRST</a></li>
                     <li><a href="#">PIZZA</a></li>
@@ -149,13 +149,13 @@ Remaining time: </p>
                     <li><a href="#">SWEET TREATES</a></li>
                 </ul>
             </li>
-            <li><a href="contact_us.html">CONTACT US</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="contact_us.jsp">CONTACT US</a></li>
+            <li><a href="about_us.jsp">ABOUT US</a></li>
             <li><a href="#">LOCATIONS</a></li>
             <li><a href="#">FEEDBACK</a></li>
-            <li><a href="login.html">LOGIN</a>
+            <li><a href="login.jsp">LOGIN</a>
             	<ul>
-                	 <li><a href="register.html">REGISTRE</a></li>
+                	 <li><a href="register.jsp">REGISTRE</a></li>
                 </ul>
                 </li>
          </ul>

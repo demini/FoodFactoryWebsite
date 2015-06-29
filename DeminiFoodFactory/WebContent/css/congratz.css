@@ -1,0 +1,19 @@
+/* CSS Document */
+
+#congratz { width:660px;
+            height:220px;
+			background-image:url(../images/homePage/congratz.jpg);
+			margin:0px auto;
+			font-family:'Oleo Script', "Times New Roman", Times, serif;
+			font-style:italic;
+			text-align:center;
+			margin:200px auto;
+			font-weight:bold;
+			font-size:24px;
+			color:#000;
+			}
+			
+#congratz h1 { padding-top:50px;}
+
+body { background-color:#FF6C6C;}
+

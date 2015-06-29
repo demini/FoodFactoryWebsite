@@ -1,0 +1,61 @@
+/* CSS Document */
+#google-map { width:500px;
+              height:400px;
+			  background-color:#C9F;
+			  float:left;
+			  }
+			  
+#pizza-pic { width:460px;
+             height:400px;
+			 
+			 float:right;}
+			 
+#pizza-pic img { margin-top:20px;
+                  margin-left:10px;
+				  }
+			 
+#wrap-top { width:960px;
+            height:400px;}
+			  
+.r1 { width:960px;
+      height:150px;
+	  margin-top:10px;
+	  margin-bottom:0px;
+	  font-family:'Roboto',Verdana, Geneva, sans-serif;
+	  text-align:center;
+	  }
+	  
+.r1 p { line-height:5px;}
+.topic { margin-top:10px;
+         margin-bottom:20px;}
+	  
+.c1 { width:480px;
+      height:150px;
+	  
+	  float:left;
+	  }
+	  
+.c2 { width:480px;
+      height:150px;
+	  float:right;
+	  
+	  
+	  }
+	  
+#wrapper-contact { width:960px;
+                   margin:15px auto;
+				   }
+				   
+
+#adds { background-image:url(../images/homePage/con2.png);
+        widows:960px;
+		height:650px;
+}
+
+#contactimage1 {top:350px;
+              position:absolute;
+			  left:0px;}
+			  
+#contactimage2 {top:600px;
+              position:absolute;
+			  right:0px;}

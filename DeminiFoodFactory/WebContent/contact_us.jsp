@@ -63,47 +63,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<div id="header">
-    	<div id="logo">
-        <img src="images/logo/logo.png" >
-        </div>
-        <div id="social-media">
-        	<p class="head">Food Factory on social</p>
-            <ul>
-            	<li><a href="http//:www.facebook.com"><img src="images/icons/facebook_32.png"></a></li></li>
-                <li><a href="http//:www.twitter.com"><img src="images/icons/twitter_32.png"></a></li></li>
-                <li><a href="#"><img src="images/icons/rss_32.png"></a></li></li>
-                <li><a href="http//:www.linkedln.com"><img src="images/icons/linkedin_32.png"></a></li></li>
-                <li><a href="http//:www.yelp.com"><img src="images/icons/yelp_32.png"></a></li></li>
-                <li><a href="http//:www.youtube.com"><img src="images/icons/youtube_32.png"></a></li></li>
-            </ul>
-            
-            <p class="number">Hotline : 011-272-97-29
-          </p>
-        </div>
-
-	<div id="topnav">
-    	<ul>
-        	<li><a href="#">FOOD<img src="images/icons/newArrow.png"></a>
-            	<ul>
-                	<li><a href="#">BREAKFIRST</a></li>
-                    <li><a href="#">PIZZA</a></li>
-                    <li><a href="#">VEGGIE FISH & SALAD</a></li>
-                    <li><a href="#">FLAME-GRILLED BURGER</a></li>
-                    <li><a href="#">SIDES</a></li>
-                    <li><a href="#">BEVERAGES</a></li>
-                    <li><a href="#">SWEET TREATES</a></li>
-                </ul>
-            </li>
-            <li><a href="contact_us.html">CONTACT US</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
-            <li><a href="#">LOCATIONS</a></li>
-            <li><a href="#">FEEDBACK</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-         </ul>
-            </div>
-
-      </div>
+   <img id="contactimage1" src="images/homePage/orange2.png">
+   <img id="contactimage2" src="images/homePage/reg22.png">
+   
+	<%@include file="/WEB-INF/pages/header.jsp" %>
+	
     
     
       <div id="wrapper-contact">
@@ -207,11 +171,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         
    </div>
    
-   <div id="footer">
-    <p>TM & cpyright 2015 Food factory Corporation.<br>
-     All right reserved.</p>
-    
-    </div>
+ <%@include file="/WEB-INF/pages/footer.jsp" %>
         
         
 </body>
