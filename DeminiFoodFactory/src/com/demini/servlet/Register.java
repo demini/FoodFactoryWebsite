@@ -12,43 +12,29 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.demini.dao.MemberDAO;
+import com.demini.entity.Member;
+
 @WebServlet("/register")
 public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String name=request.getParameter("name");
+		String username=request.getParameter("username");
+		String password=request.getParameter("password2");
+		
+		Member member=new Member();
+		member.setName(name);
+		member.setUsername(username);
+		member.setPassword(password);
+		
+		MemberDAO.register(member);
+		
+		response.sendRedirect("congratz.jsp");
 
-		  String name=request.getParameter("name");
-	      String username=request.getParameter("username");
-	      String password=request.getParameter("password2");
-	        Connection con=null;
-	        Statement stmt=null;
-	        PrintWriter out=response.getWriter();
-	        
-	        try
-	        {
-	              Class.forName("com.mysql.jdbc.Driver");
-	              con = DriverManager.getConnection( "jdbc:mysql://localhost/food_factory","root","" );
-	              stmt=con.createStatement();
-	              int i = stmt.executeUpdate("insert into login values('"+name+"', '"+username+"', '"+password+"')");
-	              if(i>0){
-	            	response.setContentType("text/html");
-	                out.println("<html><body>");
-            	    out.println("<script type=\"text/javascript\">");
-            	    out.println("var popwin = window.open(\"congratz.jsp\")");
-            	    out.println("setTimeout(function(){ popwin.close(); window.location.href='login.jsp';},3000)");
-            	    out.println("</script>");
-            	    out.println("</body></html>");
-	                
-	                }
-	              else
-	                out.println("Insert Unsuccessful");
-	        }
-	        catch(Exception e)
-	        {
-	          out.println("Some thing went wrong!"+e);       
-	        }
+		 
 	}
 
 }

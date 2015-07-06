@@ -11,6 +11,29 @@
     	<div id="logo">
         <img src="images/logo/logo.png" >
         </div>
+        <%
+			if(session.getAttribute("name")==null){
+				
+		%>
+        <div id="notlog">
+        
+        
+        	<a href="login.jsp">SIGN IN</a>
+        	<a href="register.jsp">SIGN UP</a>
+        	</div>
+        	<%
+			}else{
+		%>
+		<div id="log">
+		<h2>Welcome : <%=session.getAttribute("name") %></h2>
+		<a href="logout">SIGN OUT</a>
+		
+        </div>
+        
+        <%
+			}
+		%>
+		
         <div id="social-media">
         	<p class="head">Food Factory on social</p>
             <ul>
@@ -43,12 +66,9 @@
             <li><a href="about_us.jsp">ABOUT US</a></li>
             <li><a href="#">LOCATIONS</a></li>
             <li><a href="#">FEEDBACK</a></li>
-            <li><a href="login.jsp">LOGIN</a>
-            	<ul>
-                	 <li><a href="register.jsp">REGISTRE</a></li>
-                </ul>
-                </li>
+            
          </ul>
+         
             </div>
 
       </div>

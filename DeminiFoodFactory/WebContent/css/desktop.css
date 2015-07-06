@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-body { font-family: 'Open Sans', Arial, Helvetica, sans-serif}
+body { font-family: 'Oleo Script', Arial, Helvetica, sans-serif;
+       }
 
 .homeimage1 {position:absolute;
 			top:780px;
@@ -18,19 +19,44 @@ body { font-family: 'Open Sans', Arial, Helvetica, sans-serif}
 		  
 #logo { position:absolute;
         left:40px;
-		top:10px;}
+		top:10px;
+		}
+		
+#log {position: absolute;
+      left:700px;
+      top:0px;
+      font-family:'Oleo Script',  Arial;}
+		
+#notlog {position: absolute;
+      left:750px;
+      top:60px;
+      font-family:'Oleo Script',  Arial;
+      }
+      
+#log a {text-decoration: none;
+        padding-right: 30px;
+        color: #F09;
+        font-size: large;}
+      
+#notlog a {text-decoration: none;
+        padding-right: 30px;
+        color: #F09;
+        font-size: large;}
 
 #social-media ul{ position:absolute;
 				top:35px;
 				right:27px;
+				
 				}
+#log h2{ color: blue;} 
 				
 #social-media ul li { list-style-type:none;
                       display:inline;
 					  font-family:'Oleo Script',  Arial;
 }
 					  
-#social media { font-size:14px; font-weight:bold;}
+#social media { font-size:16px; font-weight:bold;
+                font-family:'Oleo Script',  Arial;}
 					  
 .head  { position:absolute;
           top:3px;
@@ -176,54 +202,12 @@ body { font-family: 'Open Sans', Arial, Helvetica, sans-serif}
 				 
 				 }
 				 
-#days {margin-left:20px; margin-right:20px;}	
-
-#hours { margin-right:20px;
-}
-
-#mins{ float:left; 
-margin-right:20px;}
-		   
-#secs{ float:right;
-margin-right:20px;}
 
 
 
-#timewrapper { width:300px;
-               height:40px;
-			   
-			   }
 
-.boxSize { width:50px;
-           height:25px;
-		   float:left;
-		   text-align:center;
-		   border-bottom:1px #000000 solid;
-		   }
-		   
 
-	   
-#daysBox {margin-left:20px; margin-right:18px;}	
 
-#hoursBox { margin-right:20px;
-}
-
-#minsBox { float:left; 
-margin-right:20px;}
-		   
-#secsBox { float:right;
-margin-right:20px;}
-
-#offer { width:320px;
-         height:124px;
-		 position:absolute;
-		 top:10px;
-		 left:500px;
-		 background-color:#F06;
-		 border:3px #FF0 solid;
-		 font-family:'Oleo Script', Arial, Helvetica, sans-serif;
-		 font-weight:100;
-		 color:#333;}
 		 
 #description { width:320px;
                height:40px;

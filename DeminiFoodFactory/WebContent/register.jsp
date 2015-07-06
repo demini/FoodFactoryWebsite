@@ -25,7 +25,7 @@
     
     	<div id="login">
         	<h1>Register in Food Factory</h1>
-            <form action="register" method="get" >
+            <form action="register" method="post" >
             
                  <p><input type="text" name="name" value="" placeholder="name"></p>
                  <p><input type="text" name="username" value="" placeholder="username or email"></p>

@@ -49,39 +49,14 @@
 			var bannerElement=document.getElementById("banner1");
 			bannerIndex++;
 			bannerElement.src=banners[bannerIndex];
-			setTimeout("banner()",1100);
+			setTimeout("banner()",1500);
 			if(bannerIndex==banners.length-1){
 				bannerIndex=-1;
 				}
 			}
 			onload=banner;
 			
-			function cdtd(){
-			var offer=new Date ("August 18, 2015 00:01:00");
-			var now= new Date();
-			var timediff= offer.getTime()- now.getTime();
-			
-				if(timediff<=0){
-					clearTimeout(timer);
-					document.write("Offer is expired!");
-					}
-			var seconds= Math.floor(timediff/1000);
-			var minutes=Math.floor(seconds/60);
-			var hours=Math.floor(minutes/60);
-			var days=Math.floor(hours/24);
-			
-			hours%=24;
-			minutes%=60;
-			seconds%=60;
-			
-			document.getElementById("daysBox").innerHTML=days;
-			document.getElementById("hoursBox").innerHTML=hours;
-			document.getElementById("minsBox").innerHTML=minutes;
-			document.getElementById("secsBox").innerHTML=seconds;
-			
-			var timer=setTimeout("cdtd()",1000);
-			
-			}
+		
     </script>
 </head>
 
@@ -89,79 +64,7 @@
 	<img class ="homeimage1" src="images/homePage/burger.png">
     <img class ="homeimage2" src="images/homePage/home1.png">
     
-	<div id="header">
-    	<div id="logo">
-        <img src="images/logo/logo.png" >
-        </div>
-        
-        <div id="offer">
-<div id="description"><p>Enjoy 10% OFF<br/>
-Remaining time: </p>
-</div>
-
-<div id="detailwrapper">
-	
-	<div id="days" class="boxSize">Days</div>
-    
-    <div id="hours" class="boxSize">Hours</div>
-    
-    <div id="mins" class="boxSize">Mins</div>
-    
-    <div id="secs" class="boxSize">Secs</div>
- </div>   
-<div id="timewrapper">
-	
-	<div id="daysBox" class="boxSize"></div>
-    
-    <div id="hoursBox" class="boxSize"></div>
-    
-    <div id="minsBox" class="boxSize"></div>
-    
-    <div id="secsBox" class="boxSize"></div>
- </div>
- </div>
-        
- <div id="social-media">
-        	<p class="head">Food Factory on social</p>
-            <ul>
-            	<li><a href="http//:www.facebook.com"><img src="images/icons/facebook_32.png"></a></li></li>
-                <li><a href="http//:www.twitter.com"><img src="images/icons/twitter_32.png"></a></li></li>
-                <li><a href="#"><img src="images/icons/rss_32.png"></a></li></li>
-                <li><a href="http//:www.linkedln.com"><img src="images/icons/linkedin_32.png"></a></li></li>
-                <li><a href="http//:www.yelp.com"><img src="images/icons/yelp_32.png"></a></li></li>
-                <li><a href="http//:www.youtube.com"><img src="images/icons/youtube_32.png"></a></li></li>
-            </ul>
-            
-            <p class="number">Hotline : 011-272-97-29
-          </p>
-        </div>
-
-	<div id="topnav">
-    	<ul>
-        	<li><a href="home.jsp">FOOD<img src="images/icons/newArrow.png"></a>
-            	<ul>
-                	<li><a href="#">BREAKFIRST</a></li>
-                    <li><a href="#">PIZZA</a></li>
-                    <li><a href="#">VEGGIE FISH & SALAD</a></li>
-                    <li><a href="#">FLAME-GRILLED BURGER</a></li>
-                    <li><a href="#">SIDES</a></li>
-                    <li><a href="#">BEVERAGES</a></li>
-                    <li><a href="#">SWEET TREATES</a></li>
-                </ul>
-            </li>
-            <li><a href="contact_us.jsp">CONTACT US</a></li>
-            <li><a href="about_us.jsp">ABOUT US</a></li>
-            <li><a href="#">LOCATIONS</a></li>
-            <li><a href="#">FEEDBACK</a></li>
-            <li><a href="login.jsp">LOGIN</a>
-            	<ul>
-                	 <li><a href="register.jsp">REGISTRE</a></li>
-                </ul>
-                </li>
-         </ul>
-            </div>
-
-      </div>
+	<%@include file="/WEB-INF/pages/header.jsp" %>
       
 
           <div id="wrapper">
@@ -265,15 +168,9 @@ Remaining time: </p>
         <div class="resize final left front"></div>
    </div>
     
-    <div id="footer">
-    <p>TM & cpyright 2015 Food factory Corporation.<br>
-     All right reserved.</p>
+     <%@include file="/WEB-INF/pages/footer.jsp" %>
     
-    </div>
-    
-    <script type="text/javascript">
-		cdtd();
-    </script>
+   
     
     
 </body>

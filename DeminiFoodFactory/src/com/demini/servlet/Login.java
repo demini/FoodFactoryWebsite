@@ -1,11 +1,6 @@
 package com.demini.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
 import javax.servlet.ServletException;
@@ -13,6 +8,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.demini.dao.MemberDAO;
+import com.demini.entity.Member;
+
 
 
 @WebServlet("/login")
@@ -21,34 +21,19 @@ public class Login extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String username=request.getParameter("username");
+		String password=request.getParameter("password");
 		
-	    String username=request.getParameter("username");
-	    String password=request.getParameter("password");
-	        Connection con=null;
-	        PreparedStatement ps=null;
-	        PrintWriter out=response.getWriter();
-	        try
-	        {
-	              Class.forName("com.mysql.jdbc.Driver");
-	              con = DriverManager.getConnection( "jdbc:mysql://localhost/food_factory","root","" );
-	              ps=con.prepareStatement("select * from login where username=? and password=?");
-	              ps.setString(1,username);
-	              ps.setString(2,password);
-	          
-	              ResultSet rs =ps.executeQuery();
-	              if(rs.next()){
-	             response.sendRedirect("home.jsp");	
-            }
-	              
-          else
-        	  request.setAttribute("error", "Unknown user, please try again");
-	          request.getRequestDispatcher("/login.jsp").forward(request, response);
-	          
-    }
-    catch(Exception e)
-    {
-      out.println("Some thing went wrong! "+e);       
-    }
+		Member member=MemberDAO.login(username, password);
+		if(member!=null){
+			 HttpSession session=request.getSession();
+			 session.setAttribute("name", member.getName());
+			 response.sendRedirect("home.jsp");
+		}else {
+			 response.sendRedirect("login.jsp");
+		}
+		
+	    
 	}
 
 }
