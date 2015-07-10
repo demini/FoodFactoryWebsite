@@ -1,0 +1,39 @@
+/* CSS Document */
+
+.breakimage1 {position:absolute;
+			top:250px;
+			left:0px;}
+			
+.breakimage2 {position:absolute;
+			top:450px;
+			right:0px;}
+			
+.breakimage3 {position:absolute;
+			top:850px;
+			left:0px;}
+
+#breakfirst { margin:0px auto;
+        width:140px;
+        height:40px;
+		font-style:italic;
+		text-align:center;
+		color:#FFF;
+		font-family:'Oleo Script', Arial;
+		background-color:#B35900;
+      }
+	  
+#food-wrapper { width:960px;
+				margin:0px auto;
+				height: 960px;
+				
+               }
+			   
+.firstcolumnBF { margin-left:0px;
+              }
+			  
+.secondcolumnBF {margin-left:0px;
+               }
+
+.finalBF { margin-left:0px;
+          
+	}

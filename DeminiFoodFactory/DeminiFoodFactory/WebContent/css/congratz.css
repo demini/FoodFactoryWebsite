@@ -1,0 +1,34 @@
+
+.content h1{font-family:'Oleo Script',Georgia, "Times New Roman", Times, serif;
+	        text-align: center;
+            color: #F09; 
+            padding-top: 10px;}
+			
+.content h2{font-family:'Oleo Script',Georgia, "Times New Roman", Times, serif;
+	        text-align: center;
+            color: #36C; 
+            padding-top: 10px;}
+			
+a { text-decoration:none;
+   font-weight:bold;
+   padding-left:10px;
+  color:#396 }
+   
+a:hover,visited { color:#F66;}
+
+
+#thankyou-wrapper {width:960px;
+                   margin:20px auto;
+                   height: 450px;
+				   }
+				   
+.content { width:400px;
+           float:left;
+		   }
+.content p, ul li {font-family:'Open Sans',Georgia, "Times New Roman", Times, serif;}
+		   
+#girl { width:500px;
+        float:right;}
+
+.high p{ font-weight:bold;}
+

@@ -1,0 +1,112 @@
+/* CSS Document */
+#details { width:960px;
+           margin:10px auto;
+	       font-family:'Roboto',Verdana, Geneva, sans-serif;
+		   line-height:22px;
+		   text-align:justify;
+		   }
+		   
+#founder { width:330px;
+           height:320px;
+		   float:right;
+		   margin:20px;}
+
+h3 { text-align:center;}
+
+.r1 { width:960px; 
+      height:180px;
+	  margin-bottom:60px;}
+	  
+.r2 { width:960px;
+      height:150px;
+	  margin-bottom:60px;}
+	  
+.c1 { width:630px;
+      height:156px;
+	  float:left;
+	  border-bottom:24px solid #FF2291;
+	  }
+
+.c11 { width:630px;
+      height:126px;
+	  float:left;
+	  border-bottom:24px solid #FF2291;
+	  }
+.c2  { width:310px;
+       height:156px;
+	   float:right;
+	   border-bottom:24px solid #33CC33;
+	    }
+		
+.c22  { width:310px;
+       height:126px;
+	   float:right;
+	   border-bottom:24px solid #33CC33;
+	    }
+	   
+.top1 {height:24px;
+	   width:100%; 
+       font-weight:bold;
+       background-color:#FF2291;
+		}
+		
+.top2 {height:24px;
+	   width:100%; 
+       font-weight:bold;
+       background-color:#33CC33;
+		
+		}
+		
+#pic1 { position:absolute;
+        top:20px;
+		left:100px; }
+		
+.top1-details { width:630px;
+                height:132px;
+				text-align:center;
+				position:relative;}
+				
+.top11-details { width:630px;
+                height:102px;
+				text-align:center;
+				position:relative;
+				padding-top:20px;}
+				
+#im2 { margin-right:20px;
+	   position:absolute;
+	   right:30px;
+	   bottom:20px;}
+	   
+	   
+#im1 { right:130px;
+       position:absolute;
+	   bottom:25px; }
+	   
+.top2-details { width:310px;
+               height:132px;
+			   position:relative;}
+			   
+.top22-details { width:310px;
+               height:102px;
+			   position:relative;}
+			   
+
+.pic2 { position:absolute;
+      top:30px;
+	  left:70px;}
+
+#aboutimage1 {top:400px;
+              position:absolute;}
+
+#aboutimage2 {top:900px;
+              position:absolute;
+			  right:0px;}
+			  
+ #aboutimage3 {top:1300px;
+              position:absolute;
+			  left:0px;}
+
+
+
+		   
+
