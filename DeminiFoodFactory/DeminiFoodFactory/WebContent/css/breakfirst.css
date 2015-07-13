@@ -21,6 +21,17 @@
 		font-family:'Oleo Script', Arial;
 		background-color:#B35900;
       }
+      
+#veggie {margin:0px auto;
+        width:230px;
+        height:40px;
+		font-style:italic;
+		text-align:center;
+		color:#FFF;
+		font-family:'Oleo Script', Arial;
+		background-color:#063;
+	
+}
 	  
 #food-wrapper { width:960px;
 				margin:0px auto;

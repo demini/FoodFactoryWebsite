@@ -55,7 +55,7 @@
             	<ul>
                 	<li><a href="breakfast">BREAKFAST</a></li>
                     <li><a href="#">PIZZA</a></li>
-                    <li><a href="#">VEGGIE FISH & SALAD</a></li>
+                    <li><a href="veggie">VEGGIE FISH & SALAD</a></li>
                     <li><a href="#">FLAME-GRILLED BURGER</a></li>
                     <li><a href="#">SIDES</a></li>
                     <li><a href="#">BEVERAGES</a></li>
@@ -64,8 +64,10 @@
             </li>
             <li><a href="contact_us.jsp">CONTACT US</a></li>
             <li><a href="about_us.jsp">ABOUT US</a></li>
-            <li><a href="#">LOCATIONS</a></li>
             <li><a href="#">FEEDBACK</a></li>
+            <li><a href="addItems.jsp">ADD ITEM</a></li>
+            <li><a href="#">ALTER ITEM</a></li>
+            
             
          </ul>
          

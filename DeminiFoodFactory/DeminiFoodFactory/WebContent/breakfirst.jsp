@@ -33,20 +33,20 @@
 	<div class=" resize right firstcolumnBF">
 	
     	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img  class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-        <h2 class="brown">Bacon, Egg & Cheese Croissan'wich</h2>
+        <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
     </div>
  <%}else if(num%3==2){ %>   
     
     <div class="resize secondcolumnBF">
     <a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-    <h2 class="brown">Bacon, Egg & Cheese Muffinsan'wich</h2>
+    <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
     </div>
     
 <%}else{ %>
     
     <div class="resize finalBF left">
        	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-        <h2 class="brown">Belgian Waffle</h2>
+        <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
        </div>
 
 </div>
@@ -57,20 +57,20 @@
 <div class="second-row size">
 	<div class=" resize right firstcolumnBF">
     	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-        <h2 class="brown">Breakfast HotPot</h2>
+        <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
     </div>
     <%}else if(num%3==2) {%>
     
     <div class="resize secondcolumnBF">
     <a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-    <h2 class="brown">Breakfirst Wrap</h2>
+    <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
     </div>
     
     <%}else{ %>
     
     <div class="resize finalBF left">
        	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-        <h2 class="brown">Double Croissanwich WithSausage</h2>
+        <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
        </div>
 </div>
 <%}
@@ -79,17 +79,17 @@
 <div class="second-row size">
 	<div class=" resize right firstcolumnBF">
     	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-        <h2 class="brown">King Breakfast Burger</h2>
+        <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
     </div>
     <%}else if(num%3==2){ %>
     <div class="resize secondcolumnBF">
     <a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-    <h2 class="brown">Sausage Egg & Cheese Mufffin</h2>
+    <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
     </div>
    <%}else{ %> 
     <div class="resize finalBF left">
        	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
-        <h2 class="brown">Stuffed Hash Brown</h2>
+        <h2 class="brown"><%=session.getAttribute("head"+num) %></h2>
        </div>
 
 </div>

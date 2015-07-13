@@ -43,7 +43,7 @@ public class BreakfastServlet extends HttpServlet {
 	}*/
 		try{
 		Connection con=DBFactory.getConnection();
-		String sql="select number,image from food ";
+		String sql="select number,id,image from food ";
 		PreparedStatement ps=con.prepareStatement(sql);
 		ResultSet rs=ps.executeQuery();
 		HttpSession session=request.getSession();
@@ -52,8 +52,10 @@ public class BreakfastServlet extends HttpServlet {
 		while(rs.next()){
 			String image=rs.getString("image");
 			int id=rs.getInt("number");
+			String head=rs.getString("id");
 			session.setAttribute("IdNumber"+no, id);
 			session.setAttribute("breakfirstimage"+no, image);
+			session.setAttribute("head"+no, head);
 			session.setAttribute("finalNumber", no);
 			no++;
 		}
