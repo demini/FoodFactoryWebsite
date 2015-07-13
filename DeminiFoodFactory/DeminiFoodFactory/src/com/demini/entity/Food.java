@@ -1,11 +1,22 @@
 package com.demini.entity;
 
 public class Food {
+	String number;
 	String id;
 	String smalldis;
 	String largedis;
 	String ingradients;
 	Double price;
+	String image;
+	String bigimage;
+	
+	public String getNumber(){
+		return number;
+	}
+	
+	public void setNumber(String number){
+		this.number=number;
+	}
 	
 	public String getID(){
 		return id;
@@ -45,6 +56,22 @@ public class Food {
 	
 	public void setPrice(Double price){
 		this.price=price;
+	}
+	
+	public String getImage(){
+		return image;
+	}
+	
+	public void setImage(String image){
+		this.image=image;
+	}
+	
+	public String getBigimage(){
+		return bigimage;
+	}
+	
+	public void setBigimage(String bigimage){
+		this.bigimage=bigimage;
 	}
 	
 }

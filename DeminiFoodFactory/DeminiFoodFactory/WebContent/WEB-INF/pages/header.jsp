@@ -53,7 +53,7 @@
     	<ul>
         	<li><a href="home.jsp">FOOD<img src="images/icons/newArrow.png"></a>
             	<ul>
-                	<li><a href="breakfirst.jsp">BREAKFAST</a></li>
+                	<li><a href="breakfast">BREAKFAST</a></li>
                     <li><a href="#">PIZZA</a></li>
                     <li><a href="#">VEGGIE FISH & SALAD</a></li>
                     <li><a href="#">FLAME-GRILLED BURGER</a></li>

@@ -34,6 +34,8 @@ public class FoodItems extends HttpServlet {
 			 session.setAttribute("largedis", food.getLargedis());
 			 session.setAttribute("ingradients",food.getIngradients());
 			 session.setAttribute("price", food.getPrice());
+			 session.setAttribute("image", food.getImage());
+			 session.setAttribute("bigimage", food.getBigimage());
 			 
 			 response.sendRedirect("foodItems.jsp");
 		}else {

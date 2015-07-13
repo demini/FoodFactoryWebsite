@@ -18,6 +18,8 @@
 	
 <img class="foodimage1" src="images/homePage/home1.png">
 <img class="foodimage2" src="images/homePage/orange2.png">
+<img class="foodimage3" src="images/bigbreakfast/salada.png">
+<img class="foodimage4" src="images/bigbreakfast/toma1.png">
 <div id="items-wrapper" class="pad">
  <div id="id">
  <h1 ><%=session.getAttribute("id") %> </h1>
@@ -35,9 +37,12 @@
  <h3>Ingredients</h3>
  <p><%=session.getAttribute("ingradients") %></p>
  </div>
+ 
+ 
  <div id="price">
  <p class="blue">Price :    LKR <%=session.getAttribute("price") %></p>
  </div>
+ 
  <div id="add">
  <ul>
  <li><a href="">Add to my meal</a></li>
@@ -46,6 +51,12 @@
  </div>
  
  </div>
+ 
+ <div id="image-wrapper">
+ <img src="<%=session.getAttribute("bigimage")%>">
+ </div>
+ 
+ 
 
 <%@include file="/WEB-INF/pages/footer.jsp" %>
 </body>

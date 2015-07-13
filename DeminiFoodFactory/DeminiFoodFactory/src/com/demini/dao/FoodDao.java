@@ -27,6 +27,8 @@ public class FoodDao {
 				food.setLargedis(rs.getString("largedis"));
 				food.setIngradients(rs.getString("ingradients"));
 				food.setPrice(rs.getDouble("price"));
+				food.setImage(rs.getString("image"));
+				food.setBigimage(rs.getString("bigimage"));
 				
 				return food;
 			}else{
@@ -36,6 +38,28 @@ public class FoodDao {
 		}catch(Exception e){
 			e.printStackTrace();
 			return null;
+		}
+	}
+	public static Food load(Food food){
+		try{
+			Connection con=DBFactory.getConnection();
+			String sql="select number,image from food ";
+			PreparedStatement ps=con.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			if(rs.next()){
+				Food food2=new Food();
+				
+				food2.setImage(rs.getString("image"));
+				food2.setNumber(rs.getString("number"));
+				return food;
+			
+			}else{
+				return null;
+			}
+		}catch(Exception ex){
+			ex.printStackTrace();
+			return null;
+			
 		}
 	}
 }

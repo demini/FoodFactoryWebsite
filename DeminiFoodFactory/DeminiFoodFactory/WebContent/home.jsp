@@ -81,7 +81,7 @@
     <div class="div_wrapper">
     	<div class="resize right front firstcolumn">
         	<a href="#"><img class ="food" src="images/food menu/newbreakfirst.png"></a>
-            <h2 class="brown">BREAKFIRST</h2>
+            <h2 class="brown">BREAKFAST</h2>
         </div>
       <div id="one" class="resize right firstcolumn back">
         	<h2 class="brown">Breakfirst wrap</h2>  <h2 class="brown">King breakfirst burger</h2>  <h2 class="brown">Bacon butty</h2>  <h2 class="brown">Breakfirst platter</h2> <h2 class="brown">Hash browns</h2> <h2 class="brown">Muffins</h2>

@@ -1,28 +1,44 @@
 #smalldis { font-family:'Give You Glory',Arial, Helvetica, sans-serif;
-          font-size:32px;}
+          font-size:32px;
+          margin-left: 20px;}
 #id { font-family:'Oleo Script',  Arial;
       font-size:25px;
 	  font-weight:bold;
-	  color:#000;}
-.pad {padding-left: 20px;}	  
+	  color:#000;
+	  margin-left: 20px;}
+.pad {margin-left:  20px;}	  
 	  
 #largedis {font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-           font-size:20px; }
+           font-size:20px; 
+           width: 900px;
+           margin-left: 20px;}
 		   
 #ingredients {font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-           font-size:20px; }
+           font-size:20px; 
+           margin-left: 20px;
+           
+           }
 		   
 #price {font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-size:25px;
-		font-weight:900; }
+		font-weight:900;
+		margin-left: 20px; }
 		
 .foodimage1{ position:absolute;
-             top: 450px;
+             top: 550px;
 			 right:0px;}
 			 
 .foodimage2{ position:absolute;
              top: 250px;
 			 left:0px;}	
+			 
+.foodimage3{ position:absolute;
+             top: 900px;
+			 left:0px;}	
+			 
+.foodimage4{ position:absolute;
+             top: 1100px;
+			 right:0px;}
 			 	
 #items-wrapper { width:960px;
                  height:600px;
@@ -39,3 +55,8 @@
         list-style-type:none;
 		padding-right:20px;
 		padding-left:200px;}
+		
+#image-wrapper { width: 500px;
+                 height: 540px;
+                 margin:5px auto;
+                 border: 5px dotted black;}

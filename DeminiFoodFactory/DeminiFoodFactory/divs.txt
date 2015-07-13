@@ -1,0 +1,51 @@
+<div class="first-row size">
+	<div class=" resize right firstcolumnBF">
+	
+    	<a href="foodDetails?number=1"><img  class ="food" src="<%=session.getAttribute("breakfirstimages") %>"></a>
+        <h2 class="brown">Bacon, Egg & Cheese Croissan'wich</h2>
+    </div>
+ <%} %>   
+    
+    <div class="resize secondcolumnBF">
+    <a href="foodDetails?number=2"><img class ="food" src="images/breakfirst/baconEgg&CheeseMuffin.png"></a>
+    <h2 class="brown">Bacon, Egg & Cheese Muffinsan'wich</h2>
+    </div>
+    
+    <div class="resize finalBF left">
+       	<a href="foodDetails?number=3"><img class ="food" src="images/breakfirst/belgianWaffle.png"></a>
+        <h2 class="brown">Belgian Waffle</h2>
+       </div>
+</div>
+
+<div class="second-row size">
+	<div class=" resize right firstcolumnBF">
+    	<a href="foodDetails?number=4"><img class ="food" src="images/breakfirst/breakfastHotPot.png"></a>
+        <h2 class="brown">Breakfast HotPot</h2>
+    </div>
+    
+    <div class="resize secondcolumnBF">
+    <a href="foodDetails?number=5"><img class ="food" src="images/breakfirst/breakfirstWrap.png"></a>
+    <h2 class="brown">Breakfirst Wrap</h2>
+    </div>
+    
+    <div class="resize finalBF left">
+       	<a href="foodDetails?number=6"><img class ="food" src="images/breakfirst/doubleCroissanwichWithSausage.png"></a>
+        <h2 class="brown">Double Croissanwich WithSausage</h2>
+       </div>
+</div>
+
+<div class="second-row size">
+	<div class=" resize right firstcolumnBF">
+    	<a href="foodDetails?number=7"><img class ="food" src="images/breakfirst/KingBreakfastBurger.png"></a>
+        <h2 class="brown">King Breakfast Burger</h2>
+    </div>
+    
+    <div class="resize secondcolumnBF">
+    <a href="foodDetails?number=8"><img class ="food" src="images/breakfirst/sausageEgg&CheeseMufffin.png"></a>
+    <h2 class="brown">Sausage Egg & Cheese Mufffin</h2>
+    </div>
+    
+    <div class="resize finalBF left">
+       	<a href="foodDetails?number=9"><img class ="food" src="images/breakfirst/stuffedHashBrown.png"></a>
+        <h2 class="brown">Stuffed Hash Brown</h2>
+       </div>

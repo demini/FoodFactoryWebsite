@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="javax.servlet.http.HttpServletRequest"%>   
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -18,57 +21,81 @@
 <div id="breakfirst">
 <h2>Breakfast</h2>
 </div>
+
 <div id="food-wrapper">
+	<%  Integer finalNumber=(Integer)request.getSession().getAttribute("finalNumber");
+	   
+	   
+	   for(int num=1; num<=finalNumber; num++){
+		  if(num<=3){
+	   		if(num%3==1) { %>
 <div class="first-row size">
 	<div class=" resize right firstcolumnBF">
-    	<a href="foodDetails?number=1"><img  class ="food" src="images/breakfirst/baconEgg&CheeseCroissanwich.png"></a>
+	
+    	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img  class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
         <h2 class="brown">Bacon, Egg & Cheese Croissan'wich</h2>
     </div>
+ <%}else if(num%3==2){ %>   
     
     <div class="resize secondcolumnBF">
-    <a href="foodDetails?number=2"><img class ="food" src="images/breakfirst/baconEgg&CheeseMuffin.png"></a>
+    <a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
     <h2 class="brown">Bacon, Egg & Cheese Muffinsan'wich</h2>
     </div>
     
+<%}else{ %>
+    
     <div class="resize finalBF left">
-       	<a href="foodDetails?number=3"><img class ="food" src="images/breakfirst/belgianWaffle.png"></a>
+       	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
         <h2 class="brown">Belgian Waffle</h2>
        </div>
+
 </div>
 
+<%} 
+	   		}else if(num<=6){
+	   			if(num%3==1){%>
 <div class="second-row size">
 	<div class=" resize right firstcolumnBF">
-    	<a href="foodDetails?number=4"><img class ="food" src="images/breakfirst/breakfastHotPot.png"></a>
+    	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
         <h2 class="brown">Breakfast HotPot</h2>
     </div>
+    <%}else if(num%3==2) {%>
     
     <div class="resize secondcolumnBF">
-    <a href="foodDetails?number=5"><img class ="food" src="images/breakfirst/breakfirstWrap.png"></a>
+    <a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
     <h2 class="brown">Breakfirst Wrap</h2>
     </div>
     
+    <%}else{ %>
+    
     <div class="resize finalBF left">
-       	<a href="foodDetails?number=6"><img class ="food" src="images/breakfirst/doubleCroissanwichWithSausage.png"></a>
+       	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
         <h2 class="brown">Double Croissanwich WithSausage</h2>
        </div>
 </div>
-
+<%}
+	   			}else {
+	   				if(num%3==1){%>
 <div class="second-row size">
 	<div class=" resize right firstcolumnBF">
-    	<a href="foodDetails?number=7"><img class ="food" src="images/breakfirst/KingBreakfastBurger.png"></a>
+    	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
         <h2 class="brown">King Breakfast Burger</h2>
     </div>
-    
+    <%}else if(num%3==2){ %>
     <div class="resize secondcolumnBF">
-    <a href="foodDetails?number=8"><img class ="food" src="images/breakfirst/sausageEgg&CheeseMufffin.png"></a>
+    <a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
     <h2 class="brown">Sausage Egg & Cheese Mufffin</h2>
     </div>
-    
+   <%}else{ %> 
     <div class="resize finalBF left">
-       	<a href="foodDetails?number=9"><img class ="food" src="images/breakfirst/stuffedHashBrown.png"></a>
+       	<a href="foodDetails?number=<%=(Integer)session.getAttribute("IdNumber"+num)%>"><img class ="food" src="<%=session.getAttribute("breakfirstimage"+num) %>"></a>
         <h2 class="brown">Stuffed Hash Brown</h2>
        </div>
+
 </div>
+<%}
+	   				}
+	   				}%>
 
 
 </div>
