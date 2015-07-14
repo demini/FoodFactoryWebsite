@@ -43,7 +43,7 @@ public class BreakfastServlet extends HttpServlet {
 	}*/
 		try{
 		Connection con=DBFactory.getConnection();
-		String sql="select number,id,image from food ";
+		String sql="select number,id,image from breakfast ";
 		PreparedStatement ps=con.prepareStatement(sql);
 		ResultSet rs=ps.executeQuery();
 		HttpSession session=request.getSession();

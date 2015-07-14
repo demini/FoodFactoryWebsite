@@ -13,7 +13,7 @@ public class FoodDao {
 	public static Food display(String number){
 		try{
 			Connection con=DBFactory.getConnection();
-			String sql="select * from food where number=?";
+			String sql="select * from breakfast where number=?";
 			PreparedStatement ps=con.prepareStatement(sql);
 			
 			ps.setString(1, number);
@@ -40,26 +40,28 @@ public class FoodDao {
 			return null;
 		}
 	}
-	public static Food load(Food food){
+	public static Food add(Food food){
 		try{
 			Connection con=DBFactory.getConnection();
-			String sql="select number,image from food ";
+			String sql="insert into breakfast(number,id,smalldis,largedis,ingradients,price,image,bigimage) values(?,?,?,?,?,?,?,?)";
 			PreparedStatement ps=con.prepareStatement(sql);
-			ResultSet rs=ps.executeQuery();
-			if(rs.next()){
-				Food food2=new Food();
-				
-				food2.setImage(rs.getString("image"));
-				food2.setNumber(rs.getString("number"));
-				return food;
+			int x=Integer.parseInt(food.getNumber());
+			ps.setInt(1, x);
+			ps.setString(2, food.getID());
+			ps.setString(3, food.getSmalldis());
+			ps.setString(4, food.getLargedis());
+			ps.setString(5, food.getIngradients());
+			ps.setDouble(6, food.getPrice());
+			ps.setString(7, food.getImage());
+			ps.setString(8, food.getBigimage());
+			ps.executeUpdate();
 			
-			}else{
-				return null;
-			}
+			return food;
 		}catch(Exception ex){
-			ex.printStackTrace();
-			return null;
 			
+			ex.printStackTrace();
+		    ex.getLocalizedMessage();
+		    return null;
 		}
 	}
 }

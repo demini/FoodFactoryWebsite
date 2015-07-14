@@ -7,6 +7,32 @@ import java.sql.ResultSet;
 import com.demini.entity.Food;
 
 public class VeggieDAO {
+	
+	public static Food add(Food food){
+		try{
+			Connection con=DBFactory.getConnection();
+			String sql="insert into veggie(number,id,smalldis,largedis,ingradients,price,image,bigimage) values(?,?,?,?,?,?,?,?)";
+			PreparedStatement ps=con.prepareStatement(sql);
+			int x=Integer.parseInt(food.getNumber());
+			ps.setInt(1, x);
+			ps.setString(2, food.getID());
+			ps.setString(3, food.getSmalldis());
+			ps.setString(4, food.getLargedis());
+			ps.setString(5, food.getIngradients());
+			ps.setDouble(6, food.getPrice());
+			ps.setString(7, food.getImage());
+			ps.setString(8, food.getBigimage());
+			
+			ps.executeUpdate();
+			
+			return food;
+		}catch(Exception ex){
+			
+			ex.printStackTrace();
+		    ex.getLocalizedMessage();
+		    return null;
+		}
+	}
 	public static Food display(String number){
 		try{
 			Connection con=DBFactory.getConnection();

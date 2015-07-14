@@ -36,7 +36,7 @@ public class MemberDAO {
 				member.setID(rs.getInt("id"));
 				member.setName(rs.getString("name"));
 				member.setUsername(rs.getString("username"));
-				member.setPassword("<HIDE>");
+				member.setPassword(rs.getString("password"));
 				return member;
 			}else{
 				return null;

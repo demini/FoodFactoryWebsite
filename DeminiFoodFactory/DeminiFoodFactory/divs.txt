@@ -49,3 +49,20 @@
        	<a href="foodDetails?number=9"><img class ="food" src="images/breakfirst/stuffedHashBrown.png"></a>
         <h2 class="brown">Stuffed Hash Brown</h2>
        </div>
+       
+-------------------------------------------------------------------------------
+
+  <div class="labelA">
+                <label>
+                    	 Insert a 250*175 size image here.
+                 </label>
+                 </div>
+                <p><input type="file" name="image" ></p>
+                
+                
+                <div class="labelA">
+                <label>
+                    	 Insert a 500*540 size image here.
+                 </label>
+                 </div>
+                <p><input type="file" name="image" ></p>

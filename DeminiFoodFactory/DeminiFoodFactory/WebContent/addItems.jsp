@@ -18,8 +18,8 @@
 <%@include file="/WEB-INF/pages/header.jsp" %>
 	<div id="addItems">
         	<h1>ADD NEW FOOD ITEMS FROM HERE</h1>
-            <form method="post" action=""enctype="multipart/form-data" >
-            	<select>
+            <form method="post" action="add"  >
+            	<select name="catergory">
     				<option value="" disabled="disabled" selected="selected">Select the item catergory</option>
     				<option value="1">Breakfast</option>
     				<option value="2">Pizza</option>
@@ -40,7 +40,7 @@
                     	 Insert a 250*175 size image here.
                  </label>
                  </div>
-                <p><input type="file" name="image" ></p>
+                <p><input type="file" name="image1" ></p>
                 
                 
                 <div class="labelA">
@@ -48,7 +48,7 @@
                     	 Insert a 500*540 size image here.
                  </label>
                  </div>
-                <p><input type="file" name="image" ></p>
+                <p><input type="file" name="image2" ></p>
                 	
                 
                 <p id="submit"><input type="submit" name="commit" value="Add Item"></p>

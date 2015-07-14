@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="javax.servlet.http.HttpServletRequest"%>   
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -65,10 +66,20 @@
             <li><a href="contact_us.jsp">CONTACT US</a></li>
             <li><a href="about_us.jsp">ABOUT US</a></li>
             <li><a href="#">FEEDBACK</a></li>
+            
+            <%String username=(String)request.getSession().getAttribute("username");
+            String password=(String)request.getSession().getAttribute("password");
+            String a="demini";
+            String b="123";
+            if (session.getAttribute("name")!=null){
+            	if(username.equals(a) && password.equals(b)){ %>
+            
+            
             <li><a href="addItems.jsp">ADD ITEM</a></li>
             <li><a href="#">ALTER ITEM</a></li>
             
             
+            <%}} %>
          </ul>
          
             </div>
